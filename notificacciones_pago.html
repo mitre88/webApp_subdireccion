@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificaciones de PAGO</title>
+    <link rel="stylesheet" href="./formatosnomina.css" /> <!--aqui se enlaza el css con el html -->
+</head>
+<body>
+    <figure>  <!--figure funciona para enmarcar un algo , en este caso una imagen-->
+        <img width="220" height="100"       
+              src="sev.svg " 
+              alt="imagen SEV"/>
+          <figcaption> <!--figcaption es para poner una descripcion a la imagen-->
+            <section>Notificaciones de pago</section>
+            <p>SOLICITUD DE NOTIFICACIONES DE PAGO DE PERSONAL ACTIVO/JUBILADO</p>
+<!--inicio del FORM-->
+
+<form action="https://formspree.io/f/xrgjqgye"  method="POST">  <!--atributo action para interarctuar con JS para enviar información-->
+    <!--aqui va el URL de la base de datos-->      
+<label for ="usuario">
+    <span> Nombre del interesado </span>
+    <input type="text" name="usuario" id="usuario" autocomplete="name" required>
+</label>
+
+<label for="calendario " >
+<span> Fecha de la solicitud  </span>
+<input type="datetime-local" id="calendario" name="calendario" required>
+</label>
+
+<label for ="rfc">
+<span> RFC del beneficiario </span>
+<input type="text" name="rfc" id="rfc" autocomplete="rfc" required>
+</label>
+<br>
+<br>
+<label for ="rfc">
+<span> RFC del trabajador </span>
+<input type="text" name="rfc_trabajador" id="rfc_trabajador" autocomplete="rfc" required>
+</label>
+
+<label for ="sistema">
+    <span> Sistema FEDERAL </span>
+    <input type="checkbox" name="sistema" id="sistema" autocomplete="sistema" required>
+    </label>
+
+    <label for ="personal">
+        <span> Número de personal </span>
+        <input type="text" name="personal" id="personal" autocomplete="personal" required>
+        </label>
+
+<label for ="telefono">
+<span> Número telefónico de contacto</span>
+<input type="number" name="telefono" id="telefono" autocomplete="phone" required>
+</label>
+<br>
+<br>
+<label for ="email">
+    <span>Dirección de correo electrónico</span>
+    <input type="text" name="email" id="email" autocomplete="email" required>
+    </label>
+
+
+<label for ="motivoS">
+<span>Motivo por el cual solicita</span>
+<input type="text" name="motivoS" id="motivoS" autocomplete="motivoS" required>
+</label>
+
+<label for="solicitada" >
+    <span> Quincena solicitada</span>
+    <input type="datetime-local" id="solicitada" name="solicitada" required>
+    </label>
+<br>
+<br>
+    <label for="ife" >
+        <span> Número de IFE</span>
+        <input type="text" id="ife" name="ife" required>
+        </label>
+
+        <label for="folio" >
+            <span>Número de folio de la IFE</span>
+            <input type="text" id="folio" name="folio" required>
+            </label>
+
+<br>
+<br>
+<br>
+<label for ="archivos">
+    <span>Manda tus archivos de soporte (IFE em formato .PDF)</span>
+    <input type="file" name="archivos" id="archivos" autocomplete="archivos" required>
+    </label>
+
+<br></br>
+<button type="submit" >Enviar formato</button>
+
+</form>
+<br>
+<br>
+<script src="formatosnomina.js"></script> 
+
+<p>Av. Araucarias #5, Edificio Orense II, Col. Badillo C.P. 91190, Xalapa, Ver. </p>
+<p> Tel. 228 8-41-77-00 Ext. 7203,7209,7289</p>
+
+</body>
+</html>
